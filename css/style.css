@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: var(--font-roboto);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-orbitron: 'Orbitron', sans-serif;
+    --color-primary: #0094FF;
+    --color-secondary: #004b81;
+    --bg_color: #414141;
+    --bg_color_secondary: #E0E0E0;
+    --text_color: #FFFFFF;
+    --text_color_secondary: #000000;
+    --star_color: #FFB904;
+    --colorInfo: #5FF3C5;  
+}
+
+h1,
+h2.title {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--color-primary);
+    font-family: var(--font-orbitron);
+    padding: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--font-orbitron);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-orbitron);
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--font-roboto);
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+p {
+    font-size: 16px;
+}
+
+.btn {
+    color: var(--text_color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    border: none;
+
+    &:hover {
+        background-color: var(--color-secondary);
+    }
+}
+
+.btn1 {
+    color: var(--text_color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-secondary);
+
+    &:hover {
+        background-color: var(--color-secondary);
+    }
+}
+
+.btn2 {
+    color: var(--text_color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+
+    &:hover {
+        background-color: var(--color-secondary);
+    }
+}
+
+form button[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+.star-active{
+    color: var(--star_color);
+}
+
+/* Header */
+
+.logo_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+nav > ul > li > a {
+    color: var(--text_color);
+}
+
+/* footer */
+
+footer h2.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+footer div a {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+footer div a:hover {
+    color: var(--color-secondary);
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+/* main */
+
+section {
+    padding: 20px 10px;
+}
+
+div#bg-img {
+    background-image: url("../img/Capture\ d\'écran\ 2024-07-01\ 150628.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 300px;
+    z-index: 0;
+    margin: 0 auto;
+}
+
+div form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 270px;
+    gap: 20px;    
+}
+
+div form div {
+    position: relative;
+}
+
+div form input[type="text"] {
+    width: 270px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+    font-size: 16px;
+    color: var(--text_color);
+    background-color: var(--bg_color);
+    cursor: pointer; 
+
+    &:focus {
+        outline: none;
+        border: 2px solid var(--color-secondary);
+    } 
+}
+
+i.fa-magnifying-glass-location {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    color: var(--color-primary);
+}
+
+form > button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Section 2 */
+
+section.section2 {
+    background-color: var(--bg_color);
+}
+
+section.section2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+section.section2 h2,
+section.section2 h3 {
+    color: var(--color-primary);
+}
+
+section.section2 article p {
+    color: var(--text_color);
+    padding-left: 15px;
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+/* section page rechercheFirstStep */
+
+section#rechercheFirstStep,
+section#rechercheStep2,
+section#rechercheStep3,
+section#resultSearch {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0px;
+}
+
+form div.search {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+form div.typeOfService,
+form div.typeOfServiceSpec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form div.typeOfService select,
+form div.typeOfServiceSpec select {
+    width: 270px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+    font-size: 16px;
+    color: var(--text_color);
+    background-color: var(--bg_color);
+    cursor: pointer; 
+
+    &:focus {
+        border: 2px solid var(--color-secondary);
+        background-color: var(--bg_color);
+    }
+}
+
+form div.typeOfService select option  {
+    color: var(--text_color);
+}
+
+#rechercheFirstStep > div > h2{
+    padding-bottom: 25px;
+}
+
+div.trie h3 {
+    padding-bottom: 20px;
+}
+
+/* section page resultSearch */
+
+section#resultSearch > article {
+    color: var(--text_color_secondary);
+    background-color: var(--bg_color_secondary);
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section#resultSearch > article > div.star-rating {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#resultSearch > article > div.star-rating > div.star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section#resultSearch > article > div.star-rating > div.star > p {
+    font-weight: bold;
+    padding-left: 5px;
+    align-items: center;
+}
+
+section#resultSearch > article > div.star-rating > a {
+    text-align: right;
+}
+
+section.map {
+    padding: 0px 10px 50px;
+    border-radius: 10px;
+
+}
+
+/* page profilGarage */
+
+section#profilGarage {
+    margin: 40px auto;
+
+}
+
+section#profilGarage div.borderBgColor {
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+
+section#profilGarage div.borderBgColor h2 {
+    color: var(--text_color);
+    padding-bottom: 20px;
+}
+
+section#profilGarage div.borderBgColor h3 {
+    text-align: start;
+    font-size: 16px;
+    font-family: var(--font-roboto);
+    padding: 20px 0px 5px;
+    font-weight: 500;
+}
+
+section#profilGarage div.borderBgColor div.borderBlue p {
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+
+section#profilGarage div.star-ratingProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px 0;
+}
+
+section#profilGarage div.star-ratingProfile div.starProfile {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+section#profilGarage div.star-ratingProfile div.starProfile > p {
+    font-weight: bold;
+    padding-left: 10px;
+    align-self: center;
+}
+
+section#profilGarage form {
+   justify-content: start;
+   align-items: center;
+   gap: 2px;
+   padding: 0px 0px 20px;
+   height: auto;
+}
+
+#calandar {
+    width: 100%;
+    max-width: 320px; /* Taille maximum pour les petits écrans */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Style pour le tableau du calendrier */
+
+#bgColoreCalandar {
+    background-color: var(--bg_color);
+}
+
+#bgColoreCalandar h2 {
+    text-align: center;
+    color: var(--text_color);
+    padding-bottom: 20px;
+}
+
+#bgColoreCalandar #submitRDV {
+    display: flex;
+    margin: 30px auto 10px;
+    justify-content: center;
+}
+
+#calandar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calandar th, 
+#calandar td {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px; /* Taille de police adaptée aux petits écrans */
+}
+
+#calandar th {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#calandar td {
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#calandar td:hover {
+    background-color: var(--color-secondary);
+    color: var(--text_color);
+}
+
+#calandar .today {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#calandar .selected {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Media Queries pour les écrans plus grands */
+@media (min-width: 600px) {
+    #calandar {
+        max-width: 480px;
+    }
+
+    #calandar th, 
+    #calandar td {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    #calandar {
+        max-width: 600px;
+    }
+
+    #calandar th, 
+    #calandar td {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+/* Footer */
+
+#footer {
+    padding-top: 40px;
+}
+
+/* Prise rendez-vous */
+
+#priseRendezVous {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    gap: 20px;
+    
+}
+
+#priseRendezVous div.borderBgColor {
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+
+#priseRendezVous div.borderBgColor h2 {
+    padding-bottom: 20px;
+}
+
+#priseRendezVous div.borderBgColor h3 {
+    text-align: start;
+    font-size: 16px;
+    font-family: var(--font-roboto);
+    padding: 20px 0px 5px;
+    font-weight: 500;
+}
+
+#priseRendezVous div.borderBgColor div.borderBlue {
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: var(--text_color_secondary);
+    color: var(--colorInfo);
+    text-align: center;
+    
+}
+
+#priseRendezVous div.borderBgColor div.borderBlue p {
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+#priseRendezVous div.borderBgColor form {
+    padding-top: 0px;
+    justify-content: start;
+}
+
+#commentaire {
+    width: 100%;
+    background-color: var(--text_color_secondary);
+    color: var(--text_color);
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;
+}
+
+#commentaire:focus {
+    outline: none;
+}
+
+#commentaire::placeholder {
+    padding: 10px;
+    font-weight: 400;
+    color : var(--bg_color_secondary);
+    line-height: 20px;
+}
