@@ -17,3 +17,5 @@
 - création de la page style.css
 - création du dossier images
 
+création de la page confirmationRDV.html
+mise a jour du css

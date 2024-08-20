@@ -384,12 +384,12 @@ section#profilGarage div.borderBgColor {
     color: var(--text_color);
 }
 
-section#profilGarage div.borderBgColor h2 {
+div.borderBgColor h2 {
     color: var(--text_color);
     padding-bottom: 20px;
 }
 
-section#profilGarage div.borderBgColor h3 {
+div.borderBgColor h3 {
     text-align: start;
     font-size: 16px;
     font-family: var(--font-roboto);
@@ -541,7 +541,7 @@ section#profilGarage form {
     
 }
 
-#priseRendezVous div.borderBgColor {
+div.borderBgColor {
     border: 2px solid var(--color-primary);
     border-radius: 10px;
     padding: 20px;
@@ -561,7 +561,7 @@ section#profilGarage form {
     font-weight: 500;
 }
 
-#priseRendezVous div.borderBgColor div.borderBlue {
+div.borderBlue {
     border: 2px solid var(--color-primary);
     border-radius: 10px;
     padding: 5px 10px;
@@ -598,4 +598,25 @@ section#profilGarage form {
     font-weight: 400;
     color : var(--bg_color_secondary);
     line-height: 20px;
+}
+
+#dateHeure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 0px 20px;
+}
+
+#dateHeure p{
+    font-size: 16px;
+    padding: 0px 20px;
+}
+
+#details .borderBgColor #flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
 }
